@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h1 {
+                font-family: "Roboto";
+                font-size: 8rem;
+                color: #3cb371;
+            }
+
+            .paragraph {
+                font-family: "Inter";
+            }
+
+            a {
+                text-decoration: none;
+                color: skyblue;
+            }
+
+            .list-heading {
+                font-size: 4rem;
+            }
+
+            #froggy-img {
+                height: 150px;
+                border: 1px solid black;
+                /* border-width: 1px;
+                border-style: solid;
+                border-color: black; */
+                display: block;
+            }
+
+            input {
+                border: 2px solid skyblue;
+                display: block;
+                margin-block: 1em;
+            }
+
+            button {
+                background-color: blueviolet;
+                border-radius: 10000px;
+                color: white;
+                border: none;
+                padding: 0.5em 1em;
+                display: block;
+            }
+
+            ol li:nth-child(1):hover {
+                color: red;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Hlavní nadpis</h1>
+            <p class="paragraph">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum, totam?
+            </p>
+
+            <a href="https://www.trebesin.cz">Odkaz na Třebešín</a>
+
+            <h2 style="color: red" class="list-heading">
+                Seznam oblíbených předmětů
+            </h2>
+
+            <ol>
+                <li>WET</li>
+                <li>OSS</li>
+                <li>PRG</li>
+                <li>Tělocvik</li>
+                <li>Matematika</li>
+            </ol>
+            <img src="zabka.jpg" alt="" id="froggy-img" />
+
+            <input type="text" />
+            <button>Odešli</button>
+        </div>
+    </body>
+</html>

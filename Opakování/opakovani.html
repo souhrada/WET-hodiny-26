@@ -58,6 +58,7 @@
                 border: none;
                 padding: 0.5em 1em;
                 display: block;
+                margin-bottom: 10px;
             }
 
             ol li:nth-child(1):hover {
@@ -91,6 +92,26 @@
 
             <input type="text" />
             <button>Odešli</button>
+            <button class="zoom">Zoom</button>
         </div>
+
+        <script>
+            const tlacitkoZoom = document.querySelector(".zoom")
+            const nadpis = document.querySelector("h1")
+            const obrazek = document.querySelector("#froggy-img")
+            const body = document.querySelector("body")
+
+            tlacitkoZoom.addEventListener("click", function () {
+                console.log("aaaaa")
+                nadpis.style.fontSize = "15rem"
+                nadpis.style.color = "skyblue"
+            })
+
+            obrazek.addEventListener("click", obarviStranku)
+
+            function obarviStranku() {
+                body.style.backgroundColor = "hotpink"
+            }
+        </script>
     </body>
 </html>

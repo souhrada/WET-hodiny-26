@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <input class="input" type="text" />
+        <button class="odeslat">Odeslat</button>
+        <p class="output"></p>
+
+        <script>
+            const input = document.querySelector(".input")
+            const tlacitkoOdeslat = document.querySelector(".odeslat")
+            const output = document.querySelector(".output")
+
+            tlacitkoOdeslat.addEventListener("click", function () {
+                let textInputu = input.value
+                console.log(textInputu)
+                output.textContent = textInputu
+            })
+        </script>
+    </body>
+</html>

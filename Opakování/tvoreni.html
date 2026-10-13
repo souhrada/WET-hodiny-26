@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            .ctverecek {
+                width: 200px;
+                height: 200px;
+                border: 2px solid seagreen;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            let novyDiv = document.createElement("div")
+            novyDiv.innerText = "Bla bla bla" // novyDiv.textContent = "Bla bla bla"
+            novyDiv.classList.add("ctverecek")
+            document.body.append(novyDiv)
+        </script>
+    </body>
+</html>

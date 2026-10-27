@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            body {
+                perspective: 800px;
+            }
+
+            .kontejner {
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 1em;
+            }
+
+            .ctverec {
+                height: 150px;
+                aspect-ratio: 1/1;
+                border: 1px solid black;
+            }
+
+            .cerveny {
+                background: firebrick;
+                /* transform: rotate(45deg); */
+                rotate: 45deg;
+            }
+
+            .modry {
+                background: dodgerblue;
+                translate: 100px 50px;
+            }
+
+            .zeleny {
+                background: mediumseagreen;
+                transform: scale(1.5, 1.5);
+            }
+
+            .oranzovy {
+                background: orange;
+                transform: skew(15deg);
+            }
+
+            .fialovy {
+                background: rebeccapurple;
+                transform: rotate3d(1, 2, 1, 45deg);
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="kontejner">
+            <div class="ctverec cerveny"></div>
+            <div class="ctverec modry"></div>
+            <div class="ctverec zeleny"></div>
+            <div class="ctverec oranzovy"></div>
+            <div class="ctverec fialovy">bla bla bla</div>
+        </div>
+    </body>
+</html>

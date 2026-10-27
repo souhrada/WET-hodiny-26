@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            body {
+                perspective: 800px;
+            }
+
+            .kontejner {
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 1em;
+            }
+
+            .ctverec {
+                height: 150px;
+                aspect-ratio: 1/1;
+                border: 1px solid black;
+            }
+
+            .cerveny {
+                background: firebrick;
+                transition: rotate 2s ease;
+            }
+
+            .cerveny:hover {
+                rotate: 45deg;
+            }
+
+            .modry {
+                background: dodgerblue;
+                transition:
+                    background 2s,
+                    translate 2s;
+            }
+
+            .modry:hover {
+                background-color: coral;
+                translate: 100px 50px;
+            }
+
+            .zeleny {
+                background: mediumseagreen;
+                transition: transform 2s;
+            }
+            .zeleny:hover {
+                transform: scale(2, 2);
+            }
+
+            .oranzovy {
+                background: orange;
+                transition: transform 0.5s;
+            }
+            .oranzovy:hover {
+                transform: skew(30deg);
+            }
+
+            .fialovy {
+                background: rebeccapurple;
+                color: white;
+                transition: transform 1s;
+            }
+
+            .fialovy:hover {
+                transform: rotate3d(1, 2, 1, 45deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="kontejner">
+            <div class="ctverec cerveny"></div>
+            <div class="ctverec modry"></div>
+            <div class="ctverec zeleny"></div>
+            <div class="ctverec oranzovy"></div>
+            <div class="ctverec fialovy">bla bla bla</div>
+        </div>
+    </body>
+</html>

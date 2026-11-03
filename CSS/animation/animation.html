@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .strecha {
+                width: 0;
+                height: 0;
+                border-left: 200px solid transparent;
+                border-right: 200px solid transparent;
+                border-bottom: 200px solid black;
+            }
+
+            .domecek {
+                height: 400px;
+                width: 350px;
+                border: 5px solid #bc4a3c;
+            }
+
+            .koste {
+                width: 60px;
+                animation:
+                    zametani 2s alternate infinite,
+                    metani 0.2s alternate infinite;
+            }
+
+            @keyframes zametani {
+                0% {
+                    translate: 0 0;
+                }
+                25% {
+                    translate: 0 200px;
+                }
+                50% {
+                    translate: 250px 200px;
+                }
+                100% {
+                    translate: 250px 0;
+                }
+            }
+
+            @keyframes metani {
+                0% {
+                    rotate: -45deg;
+                }
+
+                100% {
+                    rotate: 45deg;
+                }
+            }
+
+            .micek {
+                position: absolute;
+                border: 2px solid black;
+                background: rebeccapurple;
+                height: 100px;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                animation: skakani 0.5s ease-in alternate infinite;
+            }
+
+            @keyframes skakani {
+                0% {
+                    translate: 0 -400px;
+                }
+
+                100% {
+                    translate: 0 200px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="strecha"></div>
+            <div class="domecek">
+                <img src="koste.png" alt="koste" class="koste" />
+            </div>
+        </div>
+        <div class="micek"></div>
+    </body>
+</html>
